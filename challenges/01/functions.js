@@ -1,7 +1,10 @@
-function helloWord() {
-  console.log("Hello World!!");
+const fs = require("fs");
+
+function lerDiretorio(caminho) {
+  let arquivos = fs.readdirSync(caminho);
+  console.log(arquivos);
 }
 
 module.exports = {
-  helloWord,
+  lerDiretorio,
 };
